@@ -1,0 +1,11 @@
+# linux related
+.directory
+
+# User-specific stuff:
+.idea/
+*.iml
+
+# project related
+build
+out/*
+!out/.gitkeep

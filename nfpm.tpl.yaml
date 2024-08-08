@@ -1,0 +1,48 @@
+---
+name: "looking-glass-client"
+arch: "amd64"
+platform: "linux"
+version: "#LG_VERSION#"
+priority: "optional"
+provides:
+depends:
+  - libc6 (>= 2.34)
+  - libegl1
+  - libfontconfig1 (>= 2.12.6)
+  - libgcc-s1 (>= 3.0)
+  - libgl1
+  - libgmp10 (>= 2:6.2.1)
+  - libhogweed6
+  - libnettle8
+  - libpipewire-0.3-0 (>= 0.3.50)
+  - libpulse0 (>= 0.99.1)
+  - libsamplerate0 (>= 0.1.7)
+  - libstdc++6 (>= 4.1.1)
+  - libwayland-client0 (>= 1.20.0)
+  - libwayland-cursor0 (>= 1.0.2)
+  - libwayland-egl1 (>= 1.15.0)
+  - libx11-6 (>= 2:1.2.99.901)
+  - libxcursor1 (>> 1.1.2)
+  - libxfixes3
+  - libxi6 (>= 2:1.2.99.4)
+  - libxinerama1 (>= 2:1.1.4)
+  - libxkbcommon0 (>= 0.8.0)
+  - libxpresent1
+  - libxss1
+recommends:
+conflicts:
+description: Low latency KVM FrameRelay implementation for VGA Passthrough
+  LookingGlass enables you to use shared memory to pass rendered frames from a
+  virtual machine back to the host system.
+  .
+  A LookingGlass Host implementation is required to run on the guest virtual
+  machine. It is recommended that the client and host versions match. See the
+  README.Debian for more information.
+
+
+vendor: ""
+homepage: "https://looking-glass.hostfission.com"
+license: ""
+contents:
+- src: /out/looking-glass-client
+  dst: /usr/local/bin/looking-glass-client
