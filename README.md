@@ -1,2 +1,2 @@
 # looking-glass-client-builder
-build looking glass client withing docker
+build looking glass client in a docker container
